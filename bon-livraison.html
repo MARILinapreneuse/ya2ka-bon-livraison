@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; font-size: 10px; padding: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; table-layout: fixed; }
+    th, td { border: 1px solid #000; padding: 4px; text-align: center; word-wrap: break-word; font-size: 10px; }
+    th.small-cell, td.small-cell { font-size: 9.5px; }
+    .texture-cell { background-color: #f0f0f0; }
+    h3 { margin: 8px 0 4px 0; font-size: 11px; }
+    .header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+    .header-col { width: 48%; }
+    .oval { border: 1px solid black; border-radius: 20px; padding: 5px; display: inline-block; text-align: center; white-space: pre-line; font-weight: bold; }
+    .row-flex { display: flex; justify-content: space-between; gap: 10px; margin-top: 20px; }
+    .block { width: 48%; }
+    .sig-box { border: 1px solid black; padding: 6px; }
+    .sig-line { border-bottom: 1px solid black; height: 20px; margin-top: 6px; }
+    .sig-row { display: flex; justify-content: space-between; gap: 10px; }
+    .sig-col { width: 48%; }
+    .temp-note { margin-top: 20px; text-align: center; color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h1>BON DE LIVRAISON - {{jourNom}}</h1>
+
+  <div class="header">
+    <div class="header-col">
+      <p><strong>Chauffeur :</strong> Ibrahim</p>
+      <p><strong>Adresse de départ :</strong> 4 rue Vasco de Gamma 97410 Saint-Pierre</p>
+      <p><strong>Adresse de livraison :</strong> -</p>
+    </div>
+    <div class="header-col">
+      <p><strong>Téléphone :</strong> 0692018723</p>
+      <p><strong>Date de livraison :</strong> -</p>
+      <p><strong>Client :</strong> -</p>
+      <p><span class="oval">N° AGREMENT<br>974-16-030<br>CE</span></p>
+    </div>
+  </div>
+
+  {{tableauSections}}
+
+  {{regimes}}
+
+  <div class="temp-note">
+    <p><strong>Température de conservation et transport des produits</strong></p>
+    <p>⚠️ Froides : Entre 0° et +3°C</p>
+    <p>⚠️ Chaudes : Supérieur à +63°C</p>
+  </div>
+
+</body>
+</html>
